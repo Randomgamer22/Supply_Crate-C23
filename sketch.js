@@ -25,9 +25,9 @@ function setup() {
 
     supplyPackage = Bodies.rectangle(200, 100, 30, 30, options);
     ground = Bodies.rectangle(200, 400, 400, 50, {isStatic: true});
-    redBox1 = Bodies.rectangle(200, 365, 100, 20, {isStatic: true});
-    redBox2 = Bodies.rectangle(260, 325, 20, 100, {isStatic: true});
-    redBox3 = Bodies.rectangle(140, 325, 20, 100, {isStatic: true});
+    redBox1 = Bodies.rectangle(200, 365, 200, 20, {isStatic: true});
+    redBox2 = Bodies.rectangle(360, 325, 20, 100, {isStatic: true});
+    redBox3 = Bodies.rectangle(40, 325, 20, 100, {isStatic: true});
 
     World.add(world, supplyPackage);
     World.add(world, ground);
@@ -57,7 +57,7 @@ function draw() {
     push();
     fill("red");
     rectMode(CENTER);
-    rect(redBox1.position.x, redBox1.position.y, 100, 20);
+    rect(redBox1.position.x, redBox1.position.y, 200, 20);
     rect(redBox2.position.x, redBox2.position.y, 20, 100);
     rect(redBox3.position.x, redBox3.position.y, 20, 100);
     pop();
