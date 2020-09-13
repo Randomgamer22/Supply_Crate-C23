@@ -26,8 +26,8 @@ function setup() {
     supplyPackage = Bodies.rectangle(200, 100, 30, 30, options);
     ground = Bodies.rectangle(200, 400, 400, 50, {isStatic: true});
     redBox1 = Bodies.rectangle(200, 365, 200, 20, {isStatic: true});
-    redBox2 = Bodies.rectangle(360, 325, 20, 100, {isStatic: true});
-    redBox3 = Bodies.rectangle(40, 325, 20, 100, {isStatic: true});
+    redBox2 = Bodies.rectangle(310, 325, 20, 100, {isStatic: true});
+    redBox3 = Bodies.rectangle(90, 325, 20, 100, {isStatic: true});
 
     World.add(world, supplyPackage);
     World.add(world, ground);
