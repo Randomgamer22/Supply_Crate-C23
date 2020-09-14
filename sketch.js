@@ -20,7 +20,8 @@ function setup() {
     world = engine.world;
 
     options = {
-        isStatic: true
+        isStatic: true,
+        restitution: 1
     }
 
     supplyPackage = Bodies.rectangle(200, 100, 30, 30, options);
